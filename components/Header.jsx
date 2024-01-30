@@ -17,8 +17,8 @@ const Header = () => {
     >
       <Image
         style={{ height: 40, width: 80 }}
-        source={require("../assets/HERO.png")}
-        resizeMode="contain"
+        source={require("../assets/eroe.png")}
+        resizeMode="cover"
       />
 
       <TouchableOpacity onPress={() => navigation.navigate("Message")}>

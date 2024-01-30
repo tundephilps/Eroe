@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-//import Checkbox from "expo-checkbox";
+import Checkbox from "expo-checkbox";
 import Icon from "react-native-vector-icons/FontAwesome"; // Import the appropriate icon library
 import { useNavigation } from "@react-navigation/native";
 
@@ -48,7 +48,7 @@ const SignUp = () => {
       <View style={styles.container}>
         <View style={{ alignSelf: "center" }}>
           <Image
-            style={{ height: 80, width: 80, marginBottom: 30 }}
+            style={{ height: 100, width: 100, marginBottom: 20 }}
             source={require("../assets/icon.png")}
             resizeMode="cover"
           />
@@ -161,10 +161,10 @@ const SignUp = () => {
               gap: 12,
             }}
           >
-            {/* <Checkbox
+            <Checkbox
               value={rememberMe}
               onValueChange={(value) => setRememberMe(value)}
-            /> */}
+            />
           </View>
           <Text style={{ fontWeight: "200", color: "#030229" }}>
             By creating an account you agree to the
